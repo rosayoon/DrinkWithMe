@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--    -->  마이페이지 상태 바
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@color/orange"
+        android:orientation="horizontal"
+        >
+        <!--    -->  홈 상태 바
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="           술장고  "
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:background="@color/main"
+            />
+        <ImageButton
+            android:id="@+id/btn_add_alcohol_fragment_alcohol"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon_add"
+            android:layout_gravity="right"
+            android:background="@color/main"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/img_beer_alcohol_alcohol_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_low_beer"
+        android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/tv_hint_about_press_alcohol_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="술 잔을 눌러주세요"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:background="@drawable/layout_howmuch_drinks"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintVertical_bias="0.6">
+            <androidx.recyclerview.widget.RecyclerView
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/recyclerview_Alcohol_Fridge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_chart_fragment_alcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="차트로 알아보기"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_selected"
+            />
+    <Button
+        android:layout_marginLeft="120dp"
+        android:id="@+id/btn_history_fragment_alcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="술 종류별 히스토리"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_selected"
+
+        />
+    </LinearLayout>
+
+</LinearLayout>
+

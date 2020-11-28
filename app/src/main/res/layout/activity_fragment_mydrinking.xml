@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <!--    -->  홈 상태 바
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="나의 음주 라이프"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:background="#FFBB00"
+        />
+
+
+    <!--    --> 술 약속 현황
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_background"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <!--    --> 내 주량 버튼
+
+        <Button
+            android:id="@+id/btn_drinking_schedule_mydrinking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_drinking_life"
+            android:drawableTop="@drawable/icon_bongu"
+            android:text="술 약속 "
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_alcohol_fridge_mydrinking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_drinkinglife1_5"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/icon_whiskey"
+            android:gravity="left"
+            android:textAlignment="center"
+            android:text="술장고"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+
+        <!--    --> 나의 음주 현황
+
+        <Button
+            android:id="@+id/btn_howoften_drinking_mydrinking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_drinkinglife3"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/icon_cocktail"
+            android:text="나의 음주 현황"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+

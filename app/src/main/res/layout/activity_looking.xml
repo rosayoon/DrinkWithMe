@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <!--    -->  홈 상태 바
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/image_button"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@color/main"
+            android:src="@drawable/backarrow" />
+        <!--    -->  홈 상태 바
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:background="@color/main"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="          포스팅 등록  "
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <!--    -->  작성자
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:src="@drawable/icon_id"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="닉네임"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1일 전"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--    -->  글 제목 및 내용
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:background="@drawable/outline"
+        android:layout_weight="5">
+        <!--    -->  글 제목
+
+        <!--    -->  글 내용
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:paddingRight="20dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="제목"
+            android:background="@color/baige"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

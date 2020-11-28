@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <!--    -->  홈 상태 바
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="음주 라이프 헬퍼"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:background="#FFBB00"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp">
+
+    <Button
+        android:id="@+id/btn_search_bars"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="장소 술집 검색"
+        android:drawableTop="@drawable/icon_search"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/layout_howmuch_drinks"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btn_search_for_drinks"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="술 관련 동영상 "
+            android:drawableTop="@drawable/icon_youtube"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/layout_howmuch_drinks"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+

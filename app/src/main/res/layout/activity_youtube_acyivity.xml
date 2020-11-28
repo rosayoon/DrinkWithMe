@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/network"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="원하는 키워드를 눌러주세요"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:weightSum="3"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/search_about_snack_youtube"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btn_selected"
+            android:gravity="center"
+            android:text="안주 만들기 영상"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/search_about_drinks_youtube"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btn_selected"
+            android:gravity="center"
+            android:text="술 추천 영상"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/search_about_youtuber"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+
+            android:background="@drawable/btn_selected"
+            android:gravity="center"
+            android:text="술에 관하여"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/recyclerview_YouTube_List"/>
+</LinearLayout>
+

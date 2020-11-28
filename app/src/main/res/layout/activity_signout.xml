@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/btn_back_signout"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:background="@color/main"
+            android:layout_weight="1"
+            android:src="@drawable/backarrow"/>
+        <!--    -->  홈 상태 바
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="         회원 탈퇴 "
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:background="@color/main"
+
+             />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/icon_warning"
+        android:layout_gravity="center_horizontal">
+
+    </ImageView>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="탈퇴하시면 다음 기록들이                    전부 사라집니다."/>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="-저장한 음주 약속."/>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="-술 종류별 회원님의 주량"/>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="-지금까지 저장한 음주 횟수"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="그래도 탈퇴하시겠어요?"/>
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+            <Button
+                android:id="@+id/btn_signout_yes"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_selected"
+                android:text="탈퇴할래요"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_signout_no"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_selected"
+                android:text="탈퇴안할래요"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </Button>
+        </LinearLayout>
+
+</LinearLayout>

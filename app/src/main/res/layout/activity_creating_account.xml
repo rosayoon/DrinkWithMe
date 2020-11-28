@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+   >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="회원가입"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/main"
+        android:layout_marginBottom="40dp"
+        ></TextView>
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@null"
+        android:src="@drawable/icon_beer"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        >
+    </ImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="이메일"
+            android:background="@color/gray"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="비밀번호"
+            android:background="@color/gray"
+            android:layout_height="60dp"
+            android:layout_marginBottom="3dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="비밀번호는  6~10 영문, 숫자로 입력해주세요" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="비밀번호 확인"
+            android:background="@color/gray"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="닉네임"
+            android:background="@color/gray"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="회원가입 완료"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@drawable/btn_selected"
+        android:textColor="@color/black" />
+
+</LinearLayout>
+

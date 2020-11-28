@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@color/orange"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/btn_back_search_about_bar"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:background="@color/main"
+            android:src="@drawable/backarrow"/>
+        <!--    -->  홈 상태 바
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="           술집 검색  "
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:background="@color/main"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        >
+    <TextView
+        android:id="@+id/tv_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:text="술을 마시려는 지역을 입력해주세요"/>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_search_bar_search_about_bar"
+            android:layout_width="300dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:hint="장소를 입력해주세요(EX ~역 또는 ~동)"
+            android:imeOptions="actionGo"
+            android:singleLine="true" >
+        </EditText>
+        <Button
+            android:id="@+id/search_bar_search_about_bar"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btn_selected"
+            android:gravity="center"
+            android:text="검색"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/recyclerview_Naver_List"/>
+    </LinearLayout>
+</LinearLayout>

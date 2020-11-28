@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baige"
+    android:paddingRight="20dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="80dp"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환영합니다.  "
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="당신의 즐거운 음주 라이프를 "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#232221"
+        >
+    </TextView>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="380dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:text="         저와 함께 기록해보세요   "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#232221"
+        android:layout_marginBottom="50dp">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:src="@drawable/twobeer_icon" />
+
+
+
+</LinearLayout>

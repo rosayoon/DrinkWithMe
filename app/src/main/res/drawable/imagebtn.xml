@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" android:drawable="@color/orange" >
+        <shape android:shape="oval">
+            <corners android:radius="30dp"/>
+        </shape>
+    </item> //상태(정상상태, 버튼 사용 못했을 때,, 등)
+    <item android:drawable="@color/baige">
+        <shape android:shape="oval">
+            <corners android:radius="50dp"/>
+        </shape>
+    </item>
+</selector>

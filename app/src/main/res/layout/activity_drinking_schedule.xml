@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@color/orange"
+        android:orientation="horizontal"
+        >
+
+        <!--    -->  홈 상태 바
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="                  술 약속들  "
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:background="@color/main"
+            />
+        <ImageButton
+            android:id="@+id/btn_add_schedule_drinking_schedule"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+           android:src="@drawable/icon_add"
+            android:layout_gravity="right"
+            android:background="@color/main"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:src="@drawable/icon_main" />
+    <!-- --> 이번주 날짜
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_future_drinking_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="앞으로 술약속"
+            android:textColor="@color/orange"
+            android:background="@drawable/btn_selected"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/btn_past_drinking_schedule"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="지난 술약속"
+            android:background="@drawable/btn_selected"
+            android:textColor="@color/orange"
+
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+
+
+    </LinearLayout>
+
+    <!-- --> 음주 약속 기록들
+    <!-- Gradle 추가 : implementation 'androidx.recyclerview:recyclerview:1.1.0'-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_drinking_schedule"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+    <Button
+        android:layout_marginLeft="40dp"
+        android:id="@+id/btn_favorite_bar_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="단골 술집 추가하기"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_selected"
+        />
+
+
+
+</LinearLayout>
